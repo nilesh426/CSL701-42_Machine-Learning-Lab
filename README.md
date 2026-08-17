@@ -3,17 +3,19 @@
 Machine Learning Lab Experiments for Semester 7 Computer Engineering.
 
 ## Overview
-This repository contains Jupyter Notebook lab experiments created for the Machine Learning lab (CSL701) — by Nilesh Ashok Sawant (Roll: CE42). The notebooks demonstrate basic data loading, exploratory data analysis (EDA), visualization, data cleaning, and simple modelling (OLS regression) on small public datasets.
+This repository contains Jupyter Notebook lab experiments created for the Machine Learning lab (CSL701) — by Nilesh Ashok Sawant (Roll: CE42). The notebooks demonstrate basic data loading, exploratory data analysis, visualization, and elementary machine learning workflows used in the lab.
 
 ## Contents
 - Experiments/
   - ML_EXP1.ipynb — Titanic dataset: EDA, cleaning, visualizations, basic statistics.
   - ML_Exp2.ipynb — Auto MPG dataset: data cleaning, EDA, simple linear regression (OLS) predicting MPG from horsepower.
+  - ML_EXP3.ipynb — New experiment added (see notebook for dataset and details).
 - README.md — this file
 
 ## Notebooks (quick links)
 - Experiments/ML_EXP1.ipynb — Open in Colab: https://colab.research.google.com/github/nilesh426/CSL701-42_Machine-Learning-Lab/blob/main/Experiments/ML_EXP1.ipynb
 - Experiments/ML_Exp2.ipynb — Open in Colab: https://colab.research.google.com/github/nilesh426/CSL701-42_Machine-Learning-Lab/blob/main/Experiments/ML_Exp2.ipynb
+- Experiments/ML_EXP3.ipynb — Open in Colab: https://colab.research.google.com/github/nilesh426/CSL701-42_Machine-Learning-Lab/blob/main/Experiments/ML_EXP3.ipynb
 
 ## Requirements
 The notebooks are written for Python 3 and use the following libraries (typical for data-science environments):
@@ -21,15 +23,17 @@ The notebooks are written for Python 3 and use the following libraries (typical 
 - numpy
 - matplotlib
 - seaborn
+- scikit-learn (may be required for modeling experiments)
 
 They run directly in Google Colab (no local setup required) or in a local Jupyter environment with the above packages installed.
 
 ## How to run
 Option A — Google Colab (recommended):
 1. Click one of the "Open in Colab" links above.
-2. When prompted, upload the dataset file(s) used by the notebook:
+2. When prompted, upload the dataset file(s) used by the notebook. Each notebook's first cells include instructions or upload helpers indicating the expected filename(s).
    - ML_EXP1.ipynb expects a Titanic dataset (the notebook uses a file named `Titanic-Dataset.csv`).
    - ML_Exp2.ipynb expects an Auto MPG dataset (example filename used in the notebook: `auto-mpg (1).csv`).
+   - ML_EXP3.ipynb: see the top of the notebook for the dataset name and any special instructions.
 3. Run the notebook cells (Runtime -> Run all).
 
 Option B — Locally with Jupyter:
@@ -46,7 +50,7 @@ Option B — Locally with Jupyter:
 
 3. Install dependencies:
 
-   pip install pandas numpy matplotlib seaborn jupyter
+   pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
 4. Start Jupyter and open the notebooks:
 
